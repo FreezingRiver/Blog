@@ -7,7 +7,9 @@
 
 ## 具体操作
 
-现在我们创建线程组`Thread A`和`Thread B`，,`Thread A`用于发起登陆`login`的请求，`Thread B`则是模拟登陆之后的请求。我们首先需要在Test Plan下新增两个线程组（Thread Group），依次取名为Thread A和Thread B，然后再在Test Plan新增一个察看结果树（View Result Tree）类型的监听器（listener）方便我们检测是否共享`cookie成功`。测试计划大致目录如下。![A1](./images/A1.jpg)
+现在我们创建线程组`Thread A`和`Thread B`，,`Thread A`用于发起登陆`login`的请求，`Thread B`则是模拟登陆之后的请求。我们首先需要在Test Plan下新增两个线程组（Thread Group），依次取名为Thread A和Thread B，然后再在Test Plan新增一个察看结果树（View Result Tree）类型的监听器（listener）方便我们检测是否共享`cookie成功`。测试计划大致目录如下。
+
+![A1](./images/A1.jpg)
 
 - ### Thread A
 
@@ -80,9 +82,8 @@
 
 - #### Thread B
   - 创建 HTTP信息头管理器
+
     ![A1](./images/A10.jpg)
-
-
 
     配置如下：
 
